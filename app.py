@@ -9,7 +9,7 @@ st.title("AI Math Differentiator")
 st.write("Topic: Linear Equations")
 
 client = genai.Client(api_key=st.secrets["GEMINI_API_KEY"])
-MODEL = "gemini-3.8-flash"
+MODEL = "gemini-3.5-flash-lite"
 
 def signed(n):
     return f"+ {n}" if n >= 0 else f"- {abs(n)}"
