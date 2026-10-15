@@ -1,6 +1,7 @@
 # AI Math Differentiator
 
 ## Project Overview
+
 AI Math Differentiator is an interactive mathematics learning application developed for the Educational Technology & AI course.
 
 The application uses Google Gemini AI to generate linear equation problems at three difficulty levels, supporting differentiated learning.
@@ -17,7 +18,7 @@ The application uses Google Gemini AI to generate linear equation problems at th
 - Three selectable difficulty levels
 - Automatic answer checking
 - AI-powered hints adapted to student ability
-- Mathematical solutions
+- Step-by-step mathematical solutions
 - Interactive web interface
 
 ## Technologies Used
@@ -35,13 +36,13 @@ The application uses Google Gemini AI to generate linear equation problems at th
 3. Solve the generated equation.
 4. Enter your answer and click "Check Answer".
 5. Use "Get AI Hint" for personalized guidance.
-6. Click "Show Solution" to view the mathematical solution.
+6. Click "Show Step-by-Step Solution" to view the mathematical solution.
 
 ## AI Integration
 
-Google Gemini generates mathematical problem parameters according to the selected difficulty level. Python constructs the equations and calculates their correct answers.
+Google Gemini generates mathematical problem parameters according to the selected difficulty level. Python validates the parameters, constructs the equations, and checks their correct answers.
 
-The AI also provides hints using level-specific instructions without immediately revealing the final answer.
+The AI also provides hints using level-specific instructions without intentionally revealing the final answer. If an AI hint is unavailable or explicitly reveals a numerical answer, the application provides a predefined guidance hint.
 
 ## Testing
 
@@ -49,8 +50,11 @@ The application was tested at Basic, Standard, and Advanced levels. Answer check
 
 ## Live Application
 
-The application is deployed using Streamlit Community Cloud.
+https://ai-math-differentiator-gztqwkwbvuwasdvepwuy22.streamlit.app/
+
+## Source Code
+
+https://github.com/boztajaksolpan-svg/ai-math-differentiator
 
 ## Academic Purpose
-
 This project demonstrates how artificial intelligence can support differentiated mathematics instruction by adapting the difficulty and guidance to learners' needs.
