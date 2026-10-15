@@ -96,11 +96,11 @@ if st.button("Generate AI Problem"):
             }
             st.session_state.hint = None
 
-    except Exception:
-        st.error(
-            "Could not generate a problem. "
-            "Check Gemini access and try again."
-        )
+   
+    except Exception as e:
+        st.error("Could not generate a problem.")
+        st.error(f"Error type: {type(e).__name__}")
+        st.error(f"Error code: {getattr(e, 'code', 'unknown')}")
 
 problem = st.session_state.get("problem")
 
